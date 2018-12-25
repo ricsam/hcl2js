@@ -1,0 +1,17 @@
+{
+  "name": "hcl2js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "gopherjs build . --output ./dist/hcl2json.js",
+    "prepublish": "yarn run build"
+  },
+  "keywords": [],
+  "author": "Richard Samuelsson",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
