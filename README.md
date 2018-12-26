@@ -1,5 +1,13 @@
 # hcl to js (and js to hcl1)
 
+```
+npm install hcl2js
+```
+or
+```
+yarn add hcl2js
+```
+
 ## Usage
 ```javascript
 const hcl2js = require('hcl2js');
