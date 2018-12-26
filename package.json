@@ -1,6 +1,6 @@
 {
   "name": "hcl2js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "keywords": [],
   "author": "Richard Samuelsson",
+  "homepage": "https://github.com/ricsam/hcl2js",
   "license": "ISC",
   "devDependencies": {
     "jest": "^23.6.0"
