@@ -33,4 +33,4 @@ test('toHCL', () => {
 });
 ```
 
-Observe that the hcl is of version 1 when converting js objects to hcl.s
+Observe that the hcl is of version 1 when converting js objects to hcl
