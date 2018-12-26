@@ -2,7 +2,7 @@
 
 ## Usage
 ```javascript
-const hcl2js = require('../dist/index');
+const hcl2js = require('hcl2js');
 
 const hcl = `"output" = {
   "pet" = {
