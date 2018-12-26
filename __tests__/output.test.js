@@ -1,4 +1,4 @@
-const hcl2json = require('./index');
+const hcl2json = require('../index');
 
 
 const hcl = `"output" = {
