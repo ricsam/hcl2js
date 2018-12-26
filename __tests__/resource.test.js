@@ -1,4 +1,4 @@
-const hcl2json = require('../index');
+const hcl2js = require('../dist/index');
 
 
 const hcl = `"resource" = {
@@ -9,7 +9,7 @@ const hcl = `"resource" = {
   }
 }`;
 
-const json = {
+const js = {
   "resource": [
     {
       "aws_api_gateway_domain_name": [
@@ -26,11 +26,11 @@ const json = {
 };
 
 test('toJSON', () => {
-  const rep = hcl2json.toJSON(hcl);
-  expect(rep).toEqual(json);
+  const rep = hcl2js.toJs(hcl);
+  expect(rep).toEqual(js);
 });
 
 test('toHCL', () => {
-  const rep = hcl2json.toHCL(json);
+  const rep = hcl2js.toHcl(js);
   expect(rep).toEqual(hcl);
 });

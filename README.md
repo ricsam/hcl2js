@@ -1,3 +1,7 @@
+# hcl to js (and js to hcl1)
+
+## Usage
+```javascript
 const hcl2js = require('../dist/index');
 
 const hcl = `"output" = {
@@ -27,3 +31,6 @@ test('toHCL', () => {
   const rep = hcl2js.toHcl(js);
   expect(rep).toEqual(hcl);
 });
+```
+
+Observe that the hcl is of version 1 when converting js objects to hcl.s

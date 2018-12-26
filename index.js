@@ -1,7 +1,7 @@
 const hcl2json = require('./dist/hcl2json');
 
 module.exports = {
-  toJSON: function toJSON(hclString) {
+  toJs: function toJSON(hclString) {
     try {
       const [jsonString, err] = hcl2json.toJSON(hclString) 
       if (err) {
@@ -13,7 +13,7 @@ module.exports = {
     }
     return null;
   },
-  toHCL: function toHCL(jsObject) {
+  toHcl: function toHCL(jsObject) {
     try {
       const [hclString, err] = hcl2json.toHCL(
         JSON.stringify(jsObject)
