@@ -1,11 +1,11 @@
 {
   "name": "hcl2js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "gopherjs build . --output ./dist/hcl2json.js",
+    "build": "gopherjs build . --output ./dist/hcl2json.js && ncc build index.js -S && rm ./dist/hcl2json.js.map",
     "prepublish": "yarn run build"
   },
   "keywords": [],

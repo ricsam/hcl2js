@@ -1,0 +1,6 @@
+vendor
+node_modules
+__tests__
+Gopkg.lock
+Gopgk.toml
+main.go
